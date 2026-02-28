@@ -1,0 +1,346 @@
+{
+  "info": {
+    "_postman_id": "6af75ef9-0b69-4bbd-9149-e60b0dc16dcc",
+    "name": "Eldoria API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "44244550",
+    "_collection_link": "https://go.postman.co/collection/44244550-6af75ef9-0b69-4bbd-9149-e60b0dc16dcc?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "Create expedition",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"name\": \"Моя экспедиция\",\r\n  \"start_date\": \"2026-02-28\",\r\n  \"end_date\": \"2026-02-28\",\r\n  \"status\": \"planned\",\r\n  \"description\": \"Поездка по рыбным местам\",\r\n  \"location\": \"Карелия\",\r\n  \"budget\": 10000\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://realbugz-api.onrender.com/expeditions/",
+          "protocol": "https",
+          "host": [
+            "realbugz-api",
+            "onrender",
+            "com"
+          ],
+          "path": [
+            "expeditions",
+            ""
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Read expedition",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://realbugz-api.onrender.com/expeditions/36",
+          "protocol": "https",
+          "host": [
+            "realbugz-api",
+            "onrender",
+            "com"
+          ],
+          "path": [
+            "expeditions",
+            "36"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Update expedition",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"name\": \"Моя экспедиция\",\r\n  \"start_date\": \"2026-06-28\",\r\n  \"end_date\": \"2026-07-28\",\r\n  \"status\": \"planned\",\r\n  \"description\": \"Поездка по рыбным местам\",\r\n  \"location\": \"Карелия\",\r\n  \"budget\": 15000\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://realbugz-api.onrender.com/expeditions/37",
+          "protocol": "https",
+          "host": [
+            "realbugz-api",
+            "onrender",
+            "com"
+          ],
+          "path": [
+            "expeditions",
+            "37"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Delete expedition",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "https://realbugz-api.onrender.com/expeditions/36",
+          "protocol": "https",
+          "host": [
+            "realbugz-api",
+            "onrender",
+            "com"
+          ],
+          "path": [
+            "expeditions",
+            "36"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Create a new expedition",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"name\": \"Моя экспедиция\",\r\n  \"start_date\": \"2026-06-28\",\r\n  \"end_date\": \"2026-07-28\",\r\n  \"status\": \"planned\",\r\n  \"description\": \"Поездка по рыбным местам\",\r\n  \"location\": \"Карелия\",\r\n  \"budget\": 10000\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://realbugz-api.onrender.com/expeditions/",
+          "protocol": "https",
+          "host": [
+            "realbugz-api",
+            "onrender",
+            "com"
+          ],
+          "path": [
+            "expeditions",
+            ""
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Create participant_1",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"name\": \"Шурик\",\r\n  \"role\": \"leader\",\r\n  \"specialization\": \"Проводник\",\r\n  \"experience\": 10,\r\n  \"expedition_id\": 36\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://realbugz-api.onrender.com/participants/",
+          "protocol": "https",
+          "host": [
+            "realbugz-api",
+            "onrender",
+            "com"
+          ],
+          "path": [
+            "participants",
+            ""
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Create participant_2",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"name\": \"<Бывплый\",\r\n  \"role\": \"assistant\",\r\n  \"specialization\": \"Повар\",\r\n  \"experience\": 7,\r\n  \"expedition_id\": 36\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://realbugz-api.onrender.com/participants/",
+          "protocol": "https",
+          "host": [
+            "realbugz-api",
+            "onrender",
+            "com"
+          ],
+          "path": [
+            "participants",
+            ""
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Create participant_3",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"name\": \"Трус\",\r\n  \"role\": \"assistant\",\r\n  \"specialization\": \"Рыбак\",\r\n  \"experience\": 5,\r\n  \"expedition_id\": 36\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://realbugz-api.onrender.com/participants/",
+          "protocol": "https",
+          "host": [
+            "realbugz-api",
+            "onrender",
+            "com"
+          ],
+          "path": [
+            "participants",
+            ""
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Update the participant",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"name\": \"Балбес\",\r\n  \"role\": \"leader\",\r\n  \"specialization\": \"Проводник\",\r\n  \"experience\": 8,\r\n  \"expedition_id\": 36\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://realbugz-api.onrender.com/participants/140",
+          "protocol": "https",
+          "host": [
+            "realbugz-api",
+            "onrender",
+            "com"
+          ],
+          "path": [
+            "participants",
+            "140"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Delete participant_3",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "https://realbugz-api.onrender.com/participants/142",
+          "protocol": "https",
+          "host": [
+            "realbugz-api",
+            "onrender",
+            "com"
+          ],
+          "path": [
+            "participants",
+            "142"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Create artifact",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n  \"name\": \"Карась\",\r\n  \"description\": \"Рыба\",\r\n  \"discovery_date\": \"2026-07-12\",\r\n  \"condition\": \"excellent\",\r\n  \"estimated_age\": 1,\r\n  \"location\": \"Ладога\",\r\n  \"expedition_id\": 36\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://realbugz-api.onrender.com/artifacts",
+          "protocol": "https",
+          "host": [
+            "realbugz-api",
+            "onrender",
+            "com"
+          ],
+          "path": [
+            "artifacts"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Delete expedition_id",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "https://realbugz-api.onrender.com/expeditions/36",
+          "protocol": "https",
+          "host": [
+            "realbugz-api",
+            "onrender",
+            "com"
+          ],
+          "path": [
+            "expeditions",
+            "36"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
