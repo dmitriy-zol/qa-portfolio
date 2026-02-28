@@ -31,14 +31,14 @@
 
 ### Распределение дефектов по Severity
 
-- Critical — 0
-- Major — 5
-- Minor — 3
+- Critical — 2
+- Major — 21
+- Minor — 6
 - Trivial — 0
 
 ### Распределение по статусам
 
-- Open — 8
+- Open — 29
 - In Progress — 0
 - Fixed — 0
 - Rejected — 0
