@@ -63,7 +63,6 @@
 
 - Jira (структура bug report)
 - Postman
-- MySQL
 - Chrome DevTools
 - Git / GitHub
 
